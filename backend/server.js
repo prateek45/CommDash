@@ -13,9 +13,9 @@ const port = process.env.PORT || 9000
 
 //For real time messaging
 const pusher = new Pusher({
-    appId: "1404568",
-    key: "d2e40102bb65c4ab886c",
-    secret: "71f904f114c67e44ed14",
+    appId: "",
+    key: "",
+    secret: "",
     cluster: "ap4",
     useTLS: true
   });
@@ -27,7 +27,7 @@ app.use(express.json())
 
 //db config
 
-const dbConnect = 'mongodb+srv://prateek_gupta:1234@commdashcluster.l58wr.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+const dbConnect = ''
 
 mongoose.connect(dbConnect)
 
